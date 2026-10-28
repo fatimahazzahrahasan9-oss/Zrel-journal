@@ -1,0 +1,6 @@
+{
+  "name": "Pattern Journal Studio",
+  "description": "Aplikasi pembuatan dan desain jurnal digital interaktif dengan kustomisasi pattern motif, template lengkap, dan ekspor siap cetak.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

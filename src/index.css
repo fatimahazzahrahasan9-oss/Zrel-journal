@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #2D2A26;
+    background-color: #F8F6F0;
+  }
+}
+
+.font-serif-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-serif-classic {
+  font-family: 'Cormorant Garamond', Garamond, serif;
+}
+
+.font-serif-reading {
+  font-family: 'Lora', Georgia, serif;
+}
+
+.font-sans-clean {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+/* Print Stylesheet for true physical & PDF printing */
+@media print {
+  @page {
+    margin: 0;
+    size: auto;
+  }
+  html, body {
+    background: white !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .page-break-always {
+    break-after: page !important;
+    page-break-after: always !important;
+  }
+}

@@ -1,0 +1,73 @@
+import { ThemeConfig } from '../types/journal';
+
+export const THEME_PRESETS: ThemeConfig[] = [
+  {
+    id: 'sage-sanctuary',
+    name: 'Sage Sanctuary (Alam & Ketenangan)',
+    primaryFont: 'serif-display',
+    bodyFont: 'sans-clean',
+    primaryColor: '#3C4F3F',
+    accentColor: '#5E7A63',
+    paperBgColor: '#F4F7F3',
+    textColor: '#243026',
+    borderColor: '#D4DDD3',
+    cornerStyle: 'rounded-xl',
+    paperTexture: 'clean',
+  },
+  {
+    id: 'vintage-rosewater',
+    name: 'Vintage Rosewater (Hangat & Lembut)',
+    primaryFont: 'serif-classic',
+    bodyFont: 'serif-reading',
+    primaryColor: '#784346',
+    accentColor: '#A86B6F',
+    paperBgColor: '#FAF5F3',
+    textColor: '#3A2627',
+    borderColor: '#E8D7D5',
+    cornerStyle: 'rounded-md',
+    paperTexture: 'grain',
+  },
+  {
+    id: 'celestial-midnight',
+    name: 'Celestial Twilight (Misteri & Magis)',
+    primaryFont: 'serif-display',
+    bodyFont: 'sans-clean',
+    primaryColor: '#322B45',
+    accentColor: '#5F527E',
+    paperBgColor: '#F5F4FA',
+    textColor: '#211D2D',
+    borderColor: '#D9D3E6',
+    cornerStyle: 'rounded-xl',
+    paperTexture: 'dot-grid',
+  },
+  {
+    id: 'ivory-linen',
+    name: 'Ivory Linen (Arsip Minimalis)',
+    primaryFont: 'serif-classic',
+    bodyFont: 'sans-clean',
+    primaryColor: '#4A4036',
+    accentColor: '#7D6E5D',
+    paperBgColor: '#F9F7F1',
+    textColor: '#2A251F',
+    borderColor: '#E2DCD1',
+    cornerStyle: 'rounded-sm',
+    paperTexture: 'ruled',
+  },
+  {
+    id: 'muted-teal',
+    name: 'Muted Teal (Fokus & Keheningan)',
+    primaryFont: 'serif-display',
+    bodyFont: 'sans-clean',
+    primaryColor: '#2C4953',
+    accentColor: '#4A7280',
+    paperBgColor: '#F1F6F7',
+    textColor: '#1A2F37',
+    borderColor: '#CCDDE1',
+    cornerStyle: 'rounded-xl',
+    paperTexture: 'grid',
+  },
+];
+
+export function getThemeById(id: string): ThemeConfig {
+  return THEME_PRESETS.find((t) => t.id === id) || THEME_PRESETS[0];
+}
