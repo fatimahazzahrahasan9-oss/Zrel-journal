@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="14" fill="#3D4B3E"/>
+  <!-- Book spine & cover shadow -->
+  <path d="M14 12 h32 a6 6 0 0 1 6 6 v34 a4 4 0 0 1 -4 4 H14 a2 2 0 0 1 -2 -2 V14 a2 2 0 0 1 2 -2 z" fill="#F6F3EC"/>
+  <!-- Gold bookmark ribbon -->
+  <path d="M22 12 v20 l5 -3 l5 3 V12 z" fill="#D4A373"/>
+  <!-- Journal emblem -->
+  <circle cx="36" cy="34" r="8" fill="#ECE5D8" stroke="#3D4B3E" stroke-width="1.5"/>
+  <path d="M33 34 C33 30 39 30 39 34 C39 38 33 38 33 34 Z" fill="none" stroke="#3D4B3E" stroke-width="1.5"/>
+  <circle cx="36" cy="34" r="1.5" fill="#3D4B3E"/>
+  <!-- Spine stitching -->
+  <line x1="18" y1="14" x2="18" y2="54" stroke="#D3CABE" stroke-width="2" stroke-dasharray="3,3"/>
+</svg>
